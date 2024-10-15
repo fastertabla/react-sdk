@@ -1,7 +1,9 @@
 [build]
-  publish = "build"
+  # Set the directory Netlify should publish, which in your case is 'dist'
+  publish = "dist"
 
 [[redirects]]
+  # Redirect all routes to index.html (for React Router and SPA routing)
   from = "/*"
   to = "/index.html"
   status = 200
